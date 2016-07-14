@@ -1,0 +1,55 @@
+package com.flp.ems.view;
+
+import java.util.Scanner;
+
+public class BootClass {
+
+	public static void main(String[] args) {
+		System.out.println("  MENU  ");
+		System.out.println( "1. Add Employee");
+		System.out.println( "2. Modify Employee");
+		System.out.println("3. Remove Employee");
+		System.out.println("4. Search Employee ");
+		System.out.println("5. Get all employee ");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int t = sc.nextInt();
+		
+        menuSelection(t);		
+	}
+	
+	
+	static void menuSelection(int t){
+		Userintersection u1=new Userintersection();
+		switch(t)
+		{
+		case 1 : 
+//			Userintersection u1=new Userintersection();
+			u1.AddEmployee();
+			
+		case 2:
+			//Userintersection u2=new Userintersection();
+			u1.ModifyEmployee();
+			
+		case 3:
+			//Userintersection u3=new Userintersection();
+			u1.RemoveEmployee();
+			
+		case 4:
+			//Userintersection u4=new Userintersection();
+			u1.SearchEmployee();
+			
+		case 5:
+		//Userintersection u5=new Userintersection()
+		    u1.getALLEmployee();
+		
+		default : 
+			System.out.println("In default");
+		
+		}
+	
+		
+	}
+	
+}

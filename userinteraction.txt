@@ -1,0 +1,92 @@
+package com.flp.ems.view;
+import java.util.*;
+import java.util.Scanner;
+import com.flp.ems.util.Validate;
+public class Userintersection {
+
+	public void AddEmployee() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		
+		System.out.println("Enter EmployeeName");
+		String Name = sc.next();
+		
+		System.out.println("Enter  Kin-Id");
+		int kin_id = sc.nextInt();
+		
+		System.out.println("Enter  Email_id");
+		String Email_id=sc.next();
+		
+		System.out.println("Enter  phone no.");
+		int Ph_No=sc.nextInt();
+		
+		System.out.println("Enter  Address");
+		String Address =sc.next();
+		
+		System.out.println("Enter  joining date");
+		String joiningdate =sc.next();
+		
+		System.out.println("Enter date of birth");
+		String Dob =sc.next();
+		
+	    System.out.println("Enter  Department ");
+		int Department = sc.nextInt();
+		
+		System.out.println("Enter Project_id");
+		String project_id = sc.next();
+		
+		System.out.println("Enter  Role id");
+		String Roles = sc.next();
+		
+		HashMap hm=new HashMap();
+	
+		if(Validate.validateDate(joiningdate) && Validate.validateDate(Dob))
+		{
+			hm.put(1,Name);
+			hm.put(2,kin_id);
+			hm.put(3,Email_id);
+			hm.put(4,Ph_No);
+			hm.put(5,Address);
+			hm.put(6,joiningdate);
+			hm.put(7,Dob);
+			hm.put(8,Department);
+			hm.put(9,project_id);
+			hm.put(10,Roles);
+		}
+		
+	}
+
+	public void ModifyEmployee() {
+		// TODO Auto-generated method stub
+		
+				Scanner sc=new Scanner(System.in); 
+				
+				System.out.println("Enter Employee Kin-Id");
+				int kin_id = .nextInt();
+				
+				System.out.println("Enter Employee Name");
+				String name= .next();
+				
+				System.out.println("Enter  Email_id");
+				String Email_id=sc.next();
+			}
+		
+	}
+
+	public void RemoveEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void SearchEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void getALLEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
